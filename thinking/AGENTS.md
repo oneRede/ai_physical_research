@@ -1,11 +1,11 @@
 # thinking/ — 独立思考
 
-读完 concepts/ 后，在这里写下你自己的理解、质疑和延伸思考。
+读完收录的技术论文和文章后，在这里写下你自己的理解、质疑和延伸思考。
 
 ## 文件约定
 
 - 文件名：自由命名，建议用问题或论点作为文件名
-- 例如：`harness-vs-vibe-coding.md`、`is-this-only-for-openai.md`
+- 例如：`world-models-necessity.md`、`sim-to-real-gap.md`
 - 结构：问题/论点 → 自己的分析 → 结论或开放问题
 - 鼓励质疑原文，提出反例
 
@@ -16,11 +16,13 @@
 
 ## 写作方向参考
 
-- 机械化执行的边界在哪？过度 lint 是否会限制智能体创造性？
-- Harness Engineering vs Vibe Coding：本质区别是什么？
-- "零手写代码"是刻意的实验约束，还是可推广的工程实践？
-- Context Engineering vs Harness Engineering：边界与关系
+- 世界模型真的是具身智能的必要条件吗？
+- Sim-to-real gap 的根本原因是什么？
+- 端到端驾驶 vs 模块化系统：谁是未来？
+- 人形机器人的通用性是伪命题吗？
+- VLA 模型能否实现真正的零样本泛化？
+- 物理仿真器的保真度极限在哪里？
 
 ## 下一步
 
-有了自己的观点后，去 [practice/](../practice/) 用实验验证它。
+有了自己的观点后，可以整理成 [works/](../works/) 中的技术综述或分析报告。

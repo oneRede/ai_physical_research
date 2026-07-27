@@ -6,7 +6,7 @@
 
 ### 形式 A：单条 Prompt（按场景命名）
 
-- 文件名：`{场景}.md`，如 `code-generation.md`、`code-review.md`
+- 文件名：`{场景}.md`，如 `robot-paper-translation.md`、`system-architecture-analysis.md`
 - 必备字段：用途、提示词正文
 - 建议字段：效果评价（好/中/差）、改进记录、适用模型 / 不适用场景
 
@@ -20,18 +20,18 @@
 
 | 场景 | 说明 |
 |------|------|
-| 项目初始化 | 让智能体生成仓库骨架、AGENTS.md、CI 配置 |
-| 代码生成 | 在架构约束下生成业务代码 |
-| 代码审查 | 智能体审查智能体生成的代码 |
-| 重构清理 | 熵管理 / 垃圾回收 |
-| 文档维护 | doc-gardening 智能体的提示词 |
-| 情报追踪 | 定期发现领域内新内容（见 deep-research-tracker.md） |
+| 机器人论文翻译 | 结构化翻译机器人技术论文 |
+| 系统架构解析 | 分析机器人系统设计与架构 |
+| 算法对比分析 | 对比不同机器人学习方法 |
+| 实验数据提取 | 从论文中提取实验结果 |
+| 技术综述生成 | 整合多篇论文产出领域综述 |
+| 情报追踪 | 定期发现具身智能领域新进展（见 deep-research-tracker.md） |
 
 ## 已有内容
 
 | 文件 | 形态 | 用途 |
 |------|------|------|
-| [deep-research-tracker.md](deep-research-tracker.md) | 工作流 | 每周追踪 Harness Engineering / AI 编程领域新内容 |
+| [deep-research-tracker.md](deep-research-tracker.md) | 工作流 | 每周追踪具身智能与物理世界 AI 领域技术进展 |
 
 ## 下一步
 

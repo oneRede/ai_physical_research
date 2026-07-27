@@ -1,25 +1,26 @@
-# AI 应用进展追踪
+# AI 具身智能与物理世界进展追踪
 
-> 追踪和收录全球 AI 应用的最新进展、实践案例和商业化趋势
+> 追踪和收录全球具身智能（Embodied AI）与物理世界 AI 的最新技术进展，聚焦智能体与物理世界的交互、感知、决策与行动。
 
 ## 前言
 
-这是一个不断生长的学习项目。利用智能体（agent）实现 AI 应用领域内容的自动化收录与整理。
+这是一个不断生长的学习项目。利用智能体（agent）实现具身智能与物理世界 AI 领域技术进展的自动化收录与整理。
 
 ## 收录范围
 
-**聚焦 AI 应用的实际落地场景**，包括但不限于：
+**聚焦 AI 在物理世界中的感知、决策与行动**，包括但不限于：
 
-- **医疗健康**：AI 辅助诊断、药物研发、医学影像分析、临床决策支持
-- **金融科技**：智能投顾、风险控制、反欺诈、量化交易
-- **游戏娱乐**：AI NPC、游戏设计、内容生成
-- **工业制造**：智能制造、预测性维护、供应链优化、质量控制
-- **企业应用**：客服机器人、数据分析、流程自动化、知识管理
-- **科研教育**：科学计算、材料发现、AI for Science、个性化学习
-- **设计创作**：AI 设计工具、艺术创作、内容生成
-- **消费产品**：个人 AI 助手、智能硬件、生活服务
+- **机器人技术**：人形机器人、工业机器人、服务机器人、机械臂控制、灵巧操作
+- **自动驾驶**：感知系统、决策规划、端到端驾驶、仿真测试、车路协同
+- **具身智能基础**：世界模型、物理推理、空间理解、因果推理、常识推理
+- **感知与导航**：视觉 SLAM、语义地图、路径规划、obstacle avoidance、多模态感知
+- **操作与交互**：物体抓取、场景理解、human-robot interaction、任务规划、技能学习
+- **仿真与数据**：物理仿真器、sim-to-real、合成数据生成、数字孪生
+- **多模态融合**：视觉-语言-动作（VLA）模型、embodied question answering、视觉导航
+- **物理 AI 应用**：AI for Physics（物理学研究）、材料科学、分子动力学、量子计算
+- **硬件与平台**：机器人硬件、传感器、边缘计算、实时系统
 
-**不收录**：纯开发工具（IDE、Coding Agent 框架）、模型训练技术、纯学术理论（除非有明确应用场景）。
+**不收录**：纯软件 AI（不涉及物理世界）、纯应用案例（除非展示技术突破）、商业分析与市场报告。
 
 ## 核心概念
 
@@ -45,15 +46,9 @@ ai_application_research/
 
 ## 📚 收录内容
 
-### 翻译作品（5 篇）
+### 翻译作品（0 篇）
 
-| 标题 | 来源 | 主题 |
-|------|------|------|
-| [GitHub 如何构建内部数据分析 Agent](works/github-qubot-analytics-agent-translation.md) | GitHub Blog | 企业数据分析应用 |
-| [AI 病历审查如何识别罕见病临床试验候选患者](works/cleveland-clinic-dyania-chart-review-translation.md) | Cleveland Clinic / Dyania Health | 医疗 AI / 临床试验招募 |
-| [生成式 AI 在轮胎制造预测性维护中的应用](works/genai-predictive-maintenance-tyre-manufacturing-translation.md) | Production Planning & Control | 工业制造 / 预测性维护 |
-| [大型银行如何用 Agentic AI 加强反欺诈检测](works/fsb-agentic-ai-fraud-detection-translation.md) | Financial Stability Board | 金融风控 / Agentic AI |
-| [DiffSyn：生成式 AI 如何帮助科学家合成复杂材料](works/mit-diffsyn-materials-synthesis-translation.md) | MIT News / Nature Computational Science | AI for Science / 材料合成 |
+目前仓库正在重新聚焦具身智能与物理世界 AI，欢迎贡献高质量内容。
 
 完整索引见 [references/articles.md](references/articles.md)
 
@@ -86,6 +81,6 @@ git config core.hooksPath .githooks
 
 ## 🤖 自动化策展
 
-> 这个仓库通过智能体实现内容的自动化收录。
+> 这个仓库通过智能体实现具身智能与物理世界 AI 技术进展的自动化收录。
 >
 > 收录流程固化为 skill 流水线 [`curate-research`](.claude/skills/curate-research/SKILL.md)：评审由并行 agent 自动完成，`scripts/check-consistency.sh` 守护计数一致性，而"是否收录"的决策权始终由人类掌握。

@@ -1,12 +1,12 @@
 # works/ — 作品输出
 
-可展示的成果：文章、工具、模板、教程等。
+可展示的成果：技术论文翻译、机器人系统分析、技术综述等。
 
 ## 文件约定
 
-- 每个作品一个子目录或单独文件
+- 每个作品一个独立文件或子目录
 - 作品应该是**可独立理解的**，不依赖仓库其他部分的上下文
-- 适合放到博客、GitHub、求职作品集中展示
+- 适合放到技术博客、GitHub、个人知识库中展示
 
 ## 已有作品
 
@@ -35,18 +35,16 @@ pipelineSource:    # 对应 translate/<batch>/works-ready/<file>；存量手工�
 
 | 文件 | 原文 | 来源 | 领域 |
 |------|------|------|------|
-| [github-qubot-analytics-agent-translation.md](github-qubot-analytics-agent-translation.md) | How We Built an Internal Data Analytics Agent | GitHub Engineering | 企业应用 |
-| [cleveland-clinic-dyania-chart-review-translation.md](cleveland-clinic-dyania-chart-review-translation.md) | AI-Driven Chart Review Accurately Identifies Potential Rare Disease Trial Participants | Cleveland Clinic / Dyania Health | 医疗 AI |
-| [genai-predictive-maintenance-tyre-manufacturing-translation.md](genai-predictive-maintenance-tyre-manufacturing-translation.md) | Harnessing Generative Artificial Intelligence for Predictive Maintenance | Production Planning & Control | 工业制造 |
-| [fsb-agentic-ai-fraud-detection-translation.md](fsb-agentic-ai-fraud-detection-translation.md) | Strengthening Fraud Detection with Agentic AI | Financial Stability Board | 金融风控 |
-| [mit-diffsyn-materials-synthesis-translation.md](mit-diffsyn-materials-synthesis-translation.md) | DiffSyn: A Generative Diffusion Approach to Materials Synthesis Planning | MIT / Nature Computational Science | AI for Science |
+| _待补充_ | - | - | - |
 
 ## 作品方向参考
 
-- AI 应用实践案例研究
-- 行业 AI 落地方案分析
-- AI 产品设计与用户体验
-- AI 商业化路径探索
+- 机器人技术论文翻译
+- 自动驾驶系统架构解析
+- 具身智能基础研究分析
+- 物理仿真与 sim-to-real 方法综述
+- 视觉-语言-动作模型研究
+- AI for Physics 应用案例
 
 ## 下一步
 

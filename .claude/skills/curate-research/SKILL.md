@@ -15,6 +15,9 @@ description: 把一批 AI 应用调研候选（文章/论文/工具的 URL）严
 - 用户说「处理 / 收录 / 整理」`translate/` 暂存区的翻译
 - 已有 `translate/<batch>/works-ready/` 候选译文，要决定去向
 
+**重要提示：本仓库已安装并可优先使用两个子 skill：`baoyu-url-to-markdown` 和 `baoyu-translate`。**
+**当当前运行时支持 `Skill` 调用时，应直接调用这两个 skill，而不是把它们当作不存在的全局命令；不要跳过抓取、翻译或 works-ready 暂存步骤。**
+
 ## 输入与产物路径
 
 暂存区（gitignored，本地过程区）：`translate/<batch>/`
@@ -40,7 +43,8 @@ description: 把一批 AI 应用调研候选（文章/论文/工具的 URL）严
 - 被用户授权 fallback 时，必须写 `translate/<batch>/00-fetch-log.md`，逐条记录：原工具不可用原因、替代抓取方法、缺失内容、风险。
 
 ### ② 翻译
-按 baoyu-translate 配置生成 `translations/<slug>/` 三件套 → `works-ready/<slug>-translation.md`。`01-analysis.md` 要含收录建议；`source-full.md` 存在时，分析稿不得声称「仅摘要页」。
+- 按 baoyu-translate 配置生成 `translations/<slug>/` 三件套 → `works-ready/<slug>-translation.md`。`01-analysis.md` 要含收录建议；`source-full.md` 存在时，分析稿不得声称「仅摘要页」。
+- 翻译要求baoyu-translate采用高质量全文完整翻译，不得使用精简翻译
 
 **不可跳过约束：**
 - 每个候选必须有 `translations/<slug>/01-analysis.md`、`02-prompt.md`、`translation.md`，缺一不可。
@@ -51,11 +55,12 @@ description: 把一批 AI 应用调研候选（文章/论文/工具的 URL）严
 ### ③ 评审（全自动并行扇出）
 对每篇候选派一个评审 agent（一批 3–4 篇，并行多个 agent）。统一打分维度，吐结构化定性。**标准评审 prompt 模板：**
 
-> 你是 AI 应用中文知识库的内容评审。仓库主题：AI 在医疗、金融、游戏、工业、科研、企业等领域的实际落地应用。
+> 你是具身智能与物理世界 AI 中文知识库的内容评审。仓库主题：机器人技术、自动驾驶、具身智能基础、感知与导航、操作与交互、仿真与数据、多模态融合、物理 AI 应用、硬件与平台等。
 > 读 `sources/<slug>/source.md`(+`source-full.md`)、`works-ready/<slug>-translation.md`、`translations/<slug>/01-analysis.md`，逐篇回答：
-> - **原文价值**：原创洞察密度 / 长文实质 vs 产品页·发布稿·摘要。高/中/低
+> - **技术价值**：是否涉及机器人或物理 AI 技术突破、新方法论、重要实验结果？深度 vs 浅层报道。高/中/低
+> - **实验完整性**：真实世界实验、仿真实验、数据完整性。充分/部分/不足
 > - **翻译质量**：完整逐译 / 压缩摘要 / 首轮粗稿；通顺度、术语到位度。精品/合格/需返工
-> - **与仓库契合度**：补薄弱环节还是重复
+> - **与仓库契合度**：是否填补技术盲区、是否与已有内容重复
 > - **一句话定性 + 建议去向**：works/ 正式收录 / articles.md 观察项一行 / 暂不收录
 > 基于实际内容，紧凑中文，结构化输出即为最终产出。
 
