@@ -46,7 +46,7 @@ ai_application_research/
 
 ## 📚 收录内容
 
-### 翻译作品（6 篇）
+### 翻译作品（7 篇）
 
 | # | 标题 | 原文 | 翻译 |
 |---|------|------|------|
@@ -56,6 +56,7 @@ ai_application_research/
 | 4 | PNDbotics Adam 人形机器人 WAIC 2026 演示 | [Embodied Global](https://embodiedglobal.com/en/article/pndbotics-adam-humanoid-stair-climbing-waic-2026) | [works/pndbotics-adam-waic-2026-translation.md](works/pndbotics-adam-waic-2026-translation.md) |
 | 5 | 通过机器人渲染实现机器人因子化世界模型 | [arXiv](https://arxiv.org/abs/2607.22535) | [works/robot-factored-world-models-translation.md](works/robot-factored-world-models-translation.md) |
 | 6 | 具身 GPT-5.1：世界模型的证据？ | [arXiv](https://arxiv.org/abs/2607.23899) | [works/embodied-gpt-5.1-world-model-translation.md](works/embodied-gpt-5.1-world-model-translation.md) |
+| 7 | TurboVLA：消费级 RTX 4090 上 32Hz 实时视觉-语言-动作模型 | [arXiv](https://arxiv.org/abs/2607.27205) | [works/turbovla-efficient-vision-language-action-rtx4090-translation.md](works/turbovla-efficient-vision-language-action-rtx4090-translation.md) |
 
 完整索引见 [references/articles.md](references/articles.md)
 
