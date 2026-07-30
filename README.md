@@ -46,9 +46,15 @@ ai_application_research/
 
 ## 📚 收录内容
 
-### 翻译作品（0 篇）
+### 翻译作品（5 篇）
 
-目前仓库正在重新聚焦具身智能与物理世界 AI，欢迎贡献高质量内容。
+| # | 标题 | 原文 | 翻译 |
+|---|------|------|------|
+| 1 | NVIDIA 发布 Isaac GR00T 人形机器人参考设计 | [NVIDIA](https://nvidianews.nvidia.com/news/nvidia-open-humanoid-robot-reference-design) | [works/nvidia-isaac-groot-reference-robot-translation.md](works/nvidia-isaac-groot-reference-robot-translation.md) |
+| 2 | 端到端自动驾驶时代：从基于规则的驾驶到大驾驶模型的转变 | [arXiv](https://arxiv.org/html/2603.16050v1) | [works/end-to-end-driving-survey-translation.md](works/end-to-end-driving-survey-translation.md) |
+| 3 | Gemini Robotics ER 1.6：增强的具身推理能力 | [DeepMind](https://deepmind.google/blog/gemini-robotics-er-1-6/) | [works/gemini-robotics-er-1-6-translation.md](works/gemini-robotics-er-1-6-translation.md) |
+| 4 | PNDbotics Adam 人形机器人 WAIC 2026 演示 | [Embodied Global](https://embodiedglobal.com/en/article/pndbotics-adam-humanoid-stair-climbing-waic-2026) | [works/pndbotics-adam-waic-2026-translation.md](works/pndbotics-adam-waic-2026-translation.md) |
+| 5 | 通过机器人渲染实现机器人因子化世界模型 | [arXiv](https://arxiv.org/abs/2607.22535) | [works/robot-factored-world-models-translation.md](works/robot-factored-world-models-translation.md) |
 
 完整索引见 [references/articles.md](references/articles.md)
 

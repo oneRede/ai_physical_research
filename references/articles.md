@@ -10,17 +10,162 @@
 > **下游引用都是本文的冗余缓存：** 根 `README.md` / `README.en.md` 的 badge、`prompts/deep-research-tracker.md` 的去重清单、`references/AGENTS.md` 的概览表。
 > 新增/删除文章时，必须**同一次提交**更新本文 + 所有下游缓存。
 >
-> 当前规模：**0 篇文章**。最近一次同步：2026-07-27。
+> 当前规模：**5 篇文章**。最近一次同步：2026-07-30。
 ---
 
 ## 📚 文章索引
 
-目前仓库正在重新聚焦具身智能与物理世界 AI，索引将陆续更新。
+### 1. NVIDIA 发布 Isaac GR00T 人形机器人参考设计，面向学术研究
+
+**作者：** NVIDIA  
+**日期：** 2026-05-31  
+**类型：** 产品发布 / 技术平台  
+**脉络：** 机器人技术 → 硬件与平台 → 人形机器人参考设计  
+**翻译：** [works/nvidia-isaac-groot-reference-robot-translation.md](../works/nvidia-isaac-groot-reference-robot-translation.md)  
+**原文：** https://nvidianews.nvidia.com/news/nvidia-open-humanoid-robot-reference-design
+
+**核心内容：**  
+首个开放式人形机器人参考设计，整合 Unitree H2 Plus 本体、Sharpa 五指手、Jetson Thor 板载计算和 Isaac GR00T 软件栈。提供从数据采集（Isaac Teleop）→ 仿真训练（Isaac Sim/Lab）→ 部署（Isaac ROS）的完整工具链。Stanford、ETH Zurich、Ai2、UC San Diego 等顶级研究机构已承诺使用。
+
+**关键洞察：**
+- 平台级事件：为人形机器人研究建立类似 CUDA 对 GPU 的生态位置
+- 学术民主化：消除硬件碎片化障碍，降低前沿研究准入门槛
+- 完整工具链：从遥操作数据采集到 sim-to-real 部署的全栈解决方案
+- 开放生态：参考工作流将在 GitHub 和 Hugging Face 开源
+
+**技术规格：**
+- Unitree H2：1.8米高，68kg，31 DOF
+- 双 Sharpa Wave 五指手：22 DOF，总计 75 DOF
+- Jetson Thor T5000：2,070 FP4 TOPS，128GB 内存，40-130W 功耗
+- 电池续航：3小时
 
 ---
 
-## 🔍 观察项 / 候选材料（不计入 0 篇）
+### 2. 端到端自动驾驶时代：从基于规则的驾驶到大驾驶模型的转变
+
+**作者：** Eduardo Nebot, J. Stephany Berrio Perez (University of Sydney)  
+**日期：** 2026-03  
+**类型：** 学术综述 / arXiv 论文  
+**脉络：** 自动驾驶 → 端到端学习 → 技术综述与商业部署  
+**翻译：** [works/end-to-end-driving-survey-translation.md](../works/end-to-end-driving-survey-translation.md)  
+**原文：** https://arxiv.org/html/2603.16050v1
+
+**核心内容：**  
+系统性综述自动驾驶从模块化规则管道向端到端学习系统和大驾驶模型（LDMs）的范式转变。详细分析 Tesla FSD V12-V14 技术演进、Rivian 车队数据飞轮、NVIDIA Cosmos 世界基础模型以及商业 Robotaxi 部署案例。涵盖架构设计、部署策略、安全考量和行业影响。
+
+**关键洞察：**
+- **范式转变**：从 sense-perceive-plan-control 经典架构到端到端神经网络直接映射传感器输入到驾驶动作
+- **监督自主**：FSD 监督（L2++）作为新兴产品类别，结合端到端学习优势与人类监督安全性
+- **Tesla FSD 演进**：V12 首个真正端到端系统 → V13 引入占用网络和神经规划器 → V14 集成音频处理和多秒时间推理
+- **车队学习**：Rivian 数据飞轮通过 ADR 选择性采集边缘案例，OTA 推送模型更新形成复合改进循环
+- **世界模型**：NVIDIA Cosmos 实现"无限仿真"，通过生成场景在计算机内行驶数万亿英里
+- **双栈安全**：端到端策略与经典确定性护栏并行运行，置信度下降时切换回规则系统
+
+**技术挑战：**
+- 长尾场景泛化、安全验证与可解释性、计算效率、人机交互、监管框架
+
+**未来趋势：**
+- 世界模型与生成仿真、多模态融合、V2X 通信、个性化适应、从监督到完全自主的过渡
+
+---
+
+### 3. Gemini Robotics ER 1.6：增强的具身推理能力
+
+**作者：** Laura Graesser, Peng Xu (Google DeepMind)  
+**日期：** 2026-04-14  
+**类型：** 研究成果 / 模型发布  
+**脉络：** 具身智能基础 → 推理与感知 → 机器人推理模型  
+**翻译：** [works/gemini-robotics-er-1-6-translation.md](../works/gemini-robotics-er-1-6-translation.md)  
+**原文：** https://deepmind.google/blog/gemini-robotics-er-1-6/
+
+**核心内容：**  
+Google DeepMind 发布 Gemini Robotics-ER 1.6，专注具身推理能力的重大升级。增强空间推理和多视图理解，解锁仪表读数新能力。作为机器人高层推理模型，能够通过原生调用 Google Search、视觉-语言-动作模型（VLAs）或第三方函数执行任务。与 Boston Dynamics 合作，应用于 Spot 机器人的设施检查场景。
+
+**关键能力：**
+- **指向（Pointing）**：空间推理基础，用于物体检测、关系逻辑、运动推理、约束合规
+- **成功检测**：多视图推理，理解多摄像头流及其关系，判断任务完成状态
+- **仪表读数**：结合空间推理和世界知识，使用 agentic vision（视觉推理 + 代码执行）读取模拟仪表、液位指示器、数字读数，准确率达 93%
+- **安全性**：最安全的机器人模型，改进物理安全约束遵守能力（+6% 文本、+10% 视频）
+
+**技术创新：**
+- 点作为中间步骤进行复杂推理（计数、度量估计）
+- 多视图动态环境理解，处理遮挡和光照不佳
+- Agentic vision：放大图像 → 指向 + 代码执行 → 比例估计 → 世界知识解释
+
+**应用场景：**
+- 设施检查：工业仪表监控（温度计、压力表、化学观察镜）
+- 自主决策：任务重试 vs 继续执行
+- 安全操作：夹持器和材料约束下的物体选择
+
+---
+
+### 4. PNDbotics Adam 人形机器人在 WAIC 2026 展示楼梯攀爬与双 VLA 模型验证
+
+**作者：** Stax (Embodied Global)  
+**日期：** 2026-07-21  
+**类型：** 产品演示 / 技术展示  
+**脉络：** 机器人技术 → 人形机器人 → 产品演示与验证  
+**翻译：** [works/pndbotics-adam-waic-2026-translation.md](../works/pndbotics-adam-waic-2026-translation.md)  
+**原文：** https://embodiedglobal.com/en/article/pndbotics-adam-humanoid-stair-climbing-waic-2026
+
+**核心内容：**  
+PNDbotics 在上海 WAIC 2026（世界人工智能大会）展示其 Adam 全尺寸人形机器人（167cm、43 DOF）的三项并行技术演示。首次在展会环境中公开展示楼梯攀爬能力，证明在非结构化环境中的动态平衡和移动稳健性。演示了运动捕捉和遥操作能力，以及两台 Adam-U 上半身机器人并列运行不同 VLA 模型的双模型验证。
+
+**关键亮点：**
+- **首次公开展示**：Adam 楼梯攀爬能力在展会环境的首次公开演示
+- **双 VLA 模型验证**：两台 Adam-U 并列部署，每台搭载不同具身智能模型，接收自然语言指令执行抓取-放置任务
+- **开放硬件平台**：验证 Adam-U 兼容多种 AI 模型的适应性
+- **数据采集创新**：Adam-U 同时作为数据采集设备，为强化学习和模仿学习生成高质量真实机器人数据
+
+**技术规格：**
+- 身高 167cm，43 个自由度（全身）
+- PND-Network 实时通信系统：支持 100+ 至 200+ DOF 节点
+- 高带宽、低延迟控制
+- 自研核心部件：电机、驱动器、减速器
+
+**产业化进展：**
+- 2026年2月完成数亿元人民币融资
+- 宁波和天津双智能制造中心
+- 垂直整合：从核心部件开发 → 全栈运动控制 → 完整机器人系统
+- 中国人形机器人市场竞争优势
+
+---
+
+### 5. 通过机器人渲染实现机器人因子化世界模型
+
+**作者：** Byungjun Kim, Taeksoo Kim, Hyunsoo Cha, Hanbyul Joo (首尔国立大学, RLWRLD)  
+**日期：** 2026-07-24  
+**类型：** 学术论文 / arXiv  
+**脉络：** 具身智能基础 → 世界模型 → 机器人动作接口设计  
+**翻译：** [works/robot-factored-world-models-translation.md](../works/robot-factored-world-models-translation.md)  
+**原文：** https://arxiv.org/abs/2607.22535 | [项目页](https://bjkim95.github.io/rofacto/)
+
+**核心内容：**  
+提出**机器人因子化世界模型（robot-factored world models）**，将动作实现与场景响应分离。核心创新是使用**名义轨迹（nominal trajectory）**作为中间信号——在场景交互前由机器人控制器和运动学生成的运动序列，既部署时可用，又避免泄露未来交互结果。通过 URDF 渲染机器人几何形状，结合末端执行器深度和场景深度，构成深度感知的视觉世界模型接口。在 DROID (41,642 clips) 和 RoboCasa-GR1 (9,380 clips) 上验证，渲染接口显著优于向量条件基线，并能泛化到未见机器人具身。
+
+**关键洞察：**
+- **动作表示三层分解**：原始动作（控制命令）→ 名义轨迹（控制器生成的无交互运动）→ 已实现状态（包含接触的实际状态）
+- **部署现实设计**：名义轨迹在推理时可获得，无需 oracle 信息，避免了 VAP 方法的"未来信息泄露"问题
+- **深度感知接口**：网格 RGB 定位动作，末端执行器深度+场景深度解决接触判断的深度歧义
+- **跨具身泛化**：渲染接口与机器人本体解耦，支持零样本泛化到未见机器人（HRDexDB：xArm 6 + Inspire F1）
+- **人类演示转换**：通过重定向手部运动，从 DexYCB 人类演示生成机器人操作视频
+
+**技术细节：**
+- 实现算子 $\Phi_R$：动作 → 名义轨迹（Isaac Lab 无场景回放）
+- 渲染算子 $\Pi_R$：名义轨迹 → 相机对齐的 URDF 网格 RGB + 末端执行器深度
+- 模型架构：Wan 2.1 14B 潜在视频扩散，LoRA 微调，流匹配目标
+- 消融实验：原始动作网格 vs 名义轨迹（+0.87 PSNR）；+深度（+0.64 PSNR）
+
+**实验结果：**
+- DROID：渲染接口 PSNR 21.87 vs AdaLN 状态向量 18.57（+3.3）
+- RoboCasa-GR1：渲染接口 PSNR 24.61 vs AdaLN 17.67（+6.94）
+- SVD 骨干：渲染网格 PSNR 25.05 vs Ctrl-World 姿态 23.15（+1.9）
+
+---
+
+## 🔍 观察项 / 候选材料（不计入 5 篇）
 
 | 候选 | 类型 | 去向 | 角度 / 为何只做观察项 | 原文 |
 |---|---|---|---|---|
-| _待补充_ | - | - | - | - |
+| 从共识到非共识：具身智能产业化"三大困惑" | 行业沙龙 / 产业讨论 | 观察项 | 中国产业化一线声音（智元、乐聚、宇泛），聚焦数据成本、模型选择、量产交付痛点。营销色彩较重，深度有限，但补充中国视角价值高。 | [量子位](https://www.qbitai.com/2026/07/445443.html) |
+| Isaac Lab Sim-to-Real 策略迁移 | 技术文档 / 工作流指南 | 观察项 | NVIDIA Isaac Lab 官方 Sim-to-Real 工作流文档（教师-学生蒸馏 → RL微调）。实用性强但属于工具文档，非研究论文。作为 Isaac GR00T 文章的补充材料。 | [Isaac Lab](https://isaac-sim.github.io/IsaacLab/v2.3.0/source/experimental-features/newton-physics-integration/sim-to-real.html) |
