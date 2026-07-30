@@ -1,6 +1,6 @@
 # 深度研究追踪 Prompt
 
-> 用途：定期（每周）运行，发现AI应用领域的高价值新内容
+> 用途：定期（每周）运行，发现具身智能与物理世界 AI 领域的高价值新内容
 > 推荐工具：ChatGPT Deep Research（广度搜索）→ Claude（深度分析 + 项目关联）
 
 ---
@@ -8,60 +8,59 @@
 ## Prompt A：ChatGPT Deep Research — 广度发现
 
 ```
-你是一个技术情报分析师。请对以下领域进行深度网络搜索，找出过去 1 周内（{START_DATE} 至 {END_DATE}）发布的高价值内容。
+你是一个物理 AI 技术情报分析师。请对以下领域进行深度网络搜索，找出过去 1 周内（{START_DATE} 至 {END_DATE}）发布的高价值内容。
 
 ### 搜索领域
 
 核心主题：
-- "AI Application"
-- "AI for business"
-- "Enterprise AI"
-- "AI startup"
-- "AI adoption"
+- "Embodied AI"（具身智能）
+- "Physical AI"（物理 AI）
+- "Robotics"（机器人技术）
+- "Autonomous systems"（自主系统）
+- "Robot learning"（机器人学习）
 
 相关关键词（中英文）：
-- AI healthcare,AI in medicine,medical AI,AI for healthcare,AI drug discovery,AI 药物研发,AI 医疗,clinical AI,diagnostic AI,AI radiology,AI pathology
-- AI game, AI NPC
-- AI design, AI art
-- personal AI,AI assistant,consumer AI
-- AI security,cybersecurity AI,AI 安全,网络安全 AI
-- AI finance,fintech AI,AI 金融,AI 投资
-- Claude science,AI for science,scientific AI,AI research,AI 科研,科学计算 AI
-- AI materials,AI new materials,materials science AI,AI 新材料,材料科学 AI
-- AI industrial,industrial AI,manufacturing AI,AI automation,AI 工业,工业 AI,智能制造
+- humanoid robot,人形机器人,双足机器人,bipedal robot,human-robot interaction
+- robot manipulation,机器人操作,robotic grasping,灵巧操作,dexterous manipulation
+- autonomous driving,自动驾驶,end-to-end driving,perception planning,vehicle autonomy
+- embodied intelligence,具身智能,embodied agents,physical reasoning,world model
+- visual navigation,视觉导航,SLAM,semantic mapping,spatial understanding
+- sim-to-real,仿真迁移,physics simulation,digital twin,robot simulator
+- vision-language-action,VLA model,multimodal robotics,embodied QA
+- AI for physics,物理学 AI,materials science AI,molecular dynamics,quantum computing
+- edge AI,边缘计算,real-time systems,robot hardware,sensors
+- robot foundation model,机器人基础模型,generalist robot,zero-shot robot
 
 ### 搜索范围
 
 必须覆盖的信源（按优先级）：
 
-**Tier 1 — 高权重（行业媒体 + 案例研究）：**
-- TechCrunch (AI 应用报道)
-- VentureBeat AI
-- MIT Technology Review (AI 板块)
-- Nature / Science (AI 应用论文)
-- Harvard Business Review (企业 AI 案例)
-- McKinsey / BCG (AI 应用报告)
-- STAT News (医疗 AI)
-- The Information
-- 36氪（AI 商业化）
-- 机器之心、量子位（AI 应用报道）
+**Tier 1 — 高权重（顶级学术 + 行业媒体）：**
+- Nature / Science / Nature Machine Intelligence（机器人与具身智能论文）
+- arXiv (cs.RO, cs.AI, cs.CV 交叉领域)
+- IEEE Robotics and Automation Letters (RA-L)
+- CoRL / RSS / ICRA / IROS 会议论文
+- MIT Technology Review（机器人与自动化板块）
+- TechCrunch（机器人创业报道）
+- The Robot Report
+- 机器之心、量子位、新智元（机器人/自动驾驶报道）
 
-**Tier 2 — 中权重（公司博客 + 产品案例）：**
-- OpenAI Blog (应用案例，非模型技术)
-- Anthropic Blog (应用案例)
-- Google AI Blog (应用案例)
-- Microsoft AI Blog
-- 各行业头部公司技术博客（医疗、金融、游戏、制造等）
-- ProductHunt (AI 应用产品)
-- Hacker News (AI 应用讨论)
-- 知乎专栏、少数派、掘金（AI 应用实践）
+**Tier 2 — 中权重（实验室 + 公司博客）：**
+- Google DeepMind Blog（机器人研究）
+- OpenAI Blog（机器人项目）
+- Tesla AI Day / Tesla FSD 更新
+- Boston Dynamics / Agility Robotics / Figure AI 技术博客
+- NVIDIA Isaac Sim / Omniverse 更新
+- UC Berkeley BAIR / CMU RI / MIT CSAIL / Stanford AI Lab
+- Physical Intelligence / Covariant / Skild AI 博客
+- 知乎专栏（机器人学习、自动驾驶实践）
 
 **Tier 3 — 低权重但可能有惊喜：**
-- arXiv (cs.AI 应用方向)
-- Medium AI 专栏
-- YouTube (AI 应用案例频道)
-- Reddit (r/artificial, r/MachineLearning)
-- LinkedIn (行业专家分享)
+- GitHub Trending（机器人/仿真相关仓库）
+- Hacker News（机器人讨论）
+- Reddit (r/robotics, r/reinforcementlearning, r/selfdrivingcars)
+- YouTube（机器人演示视频、学术报告）
+- Twitter/X（机器人研究者、实验室账号）
 
 
 ### 我们已知的内容（用于去重和关联）
@@ -126,17 +125,17 @@
 - 有中文社区尚未覆盖的视角
 
 **排除：**
-- 纯产品发布/营销内容
-- 对已有文章的简单翻译或摘要（没有新观点）
-- 过于初级的入门教程
-- 纯开发工具类（IDE、Coding Agent、Harness 框架）
-- 纯模型训练技术（与实际应用场景无关）
+- 纯软件 AI（不涉及物理世界交互）
+- 纯商业分析与市场报告（除非包含技术突破）
+- 过于初级的机器人入门教程
+- 纯硬件产品发布（除非展示技术创新）
+- 仅概念性讨论，无实验验证或实际部署
 
 ### 输出数量
 
-- 文章类：推荐 5-10 篇，按推荐指数排序
+- 文章/论文类：推荐 5-10 篇，按推荐指数排序
 - 开源项目类：推荐 3-5 个
-- 其他（工具/演讲/论文）：如有高质量内容，不限数量
+- 其他（技术报告/演示视频/数据集）：如有高质量内容，不限数量
 ```
 
 ---
@@ -154,18 +153,19 @@
 
 1. **优先级排序**：哪些内容最值得我们收录？考虑因素：
    - 对已收录文章的补充价值
-   - 应用场景的新颖性和实践价值
-   - 数据和案例的真实性与深度
-   - 对 AI 应用落地的启发意义
+   - 技术突破性和创新性
+   - 实验数据和实际部署案例的真实性与深度
+   - 对具身智能与物理世界 AI 发展的启发意义
 
 2. **缺口分析**：这批内容覆盖了我们的哪些知识缺口？还有哪些缺口未被触及？
    当前已知缺口：
-   - 医疗 AI 的临床验证案例
-   - 金融 AI 的风险控制实践
-   - 工业 AI 的 ROI 数据
-   - 游戏 AI 的用户体验研究
+   - 机器人操作的泛化能力验证案例
+   - 自动驾驶的端到端学习实践
+   - Sim-to-real 迁移的成功案例
+   - 物理推理与世界模型的实际应用
+   - 多模态机器人基础模型
 
-3. **趋势信号**：这批内容中是否有新的趋势或方向？是否揭示了新的应用领域或商业模式？
+3. **趋势信号**：这批内容中是否有新的趋势或方向？是否揭示了新的技术路径或研究范式？
 
 4. **收录建议**：对每条推荐内容给出具体建议：
    - 收录到 references/articles.md（哪个脉络）
@@ -184,40 +184,43 @@
 定时任务：每日检查以下信源的更新
 
 监控列表：
-**Tier 1 — 高权重（模型厂商 + 顶级技术博客）：**
-- Anthropic Engineering Blog (anthropic.com/engineering)
-- OpenAI Blog (openai.com)
-- Google DeepMind / Google AI Blog
-- Martin Fowler (martinfowler.com)
-- Mitchell Hashimoto (mitchellh.com)
-- LangChain Blog (blog.langchain.com)
-- Simon Willison (simonwillison.net)
+**Tier 1 — 高权重（顶级实验室 + 机器人公司）：**
+- Google DeepMind Blog (deepmind.google/research/robotics)
+- OpenAI Blog (openai.com/research - 机器人相关)
+- Boston Dynamics Blog (bostondynamics.com/blog)
+- Tesla AI (tesla.com/AI)
+- Physical Intelligence (physicalintelligence.company)
+- Covariant Blog (covariant.ai/insights)
+- UC Berkeley BAIR (bair.berkeley.edu/blog)
+- MIT CSAIL (csail.mit.edu/news)
+- Stanford AI Lab (ai.stanford.edu/blog)
 
 **Tier 2 — 中权重（社区 + 行业）：**
-- Hacker News (前 100 讨论)
-- GitHub Trending (相关仓库)
-- X/Twitter 技术社区 (#harness-engineering, #ai-coding, #context-engineering)
-- Dev.to, Medium 技术专栏
-- HumanLayer, Cursor, Windsurf, Codex 相关博客
-- 中文社区：少数派、掘金、知乎专栏
-- TechCrunch、STAT News、Import AI、VentureBeat、 Product
+- arXiv (cs.RO, cs.AI, cs.LG 交叉)
+- GitHub Trending (robotics, simulation, autonomous-driving)
+- Hacker News (前 100 讨论 - 机器人相关)
+- The Robot Report (therobotreport.com)
+- IEEE Spectrum Robotics (spectrum.ieee.org/robotics)
+- 中文社区：机器之心、量子位、新智元
+- Reddit (r/robotics, r/reinforcementlearning, r/selfdrivingcars)
 
 **Tier 3 — 低权重但可能有惊喜：**
-- arXiv (cs.SE, cs.AI 交叉)
-- 个人技术博客
-- YouTube 技术频道
-- Reddit (r/LocalLLaMA, r/ChatGPT, r/programming)
+- YouTube 技术频道（机器人演示、学术报告）
+- Twitter/X 研究者账号
+- Medium 机器人专栏
+- 个人技术博客（机器人研究者）
 
 匹配关键词：
-- AI healthcare,AI in medicine,medical AI,AI for healthcare,AI drug discovery,AI 药物研发,AI 医疗,clinical AI,diagnostic AI,AI radiology,AI pathology
-- AI game, AI NPC
-- AI design, AI art
-- personal AI,AI assistant,consumer AI
-- AI security,cybersecurity AI,AI 安全,网络安全 AI
-- AI finance,fintech AI,AI 金融,AI 投资
-- Claude science,AI for science,scientific AI,AI research,AI 科研,科学计算 AI
-- AI materials,AI new materials,materials science AI,AI 新材料,材料科学 AI
-- AI industrial,industrial AI,manufacturing AI,AI automation,AI 工业,工业 AI,智能制造
+- humanoid robot,人形机器人,双足机器人,bipedal robot
+- robot manipulation,机器人操作,robotic grasping,灵巧操作
+- autonomous driving,自动驾驶,end-to-end driving,FSD
+- embodied intelligence,具身智能,embodied agents,physical reasoning
+- visual navigation,视觉导航,SLAM,semantic mapping
+- sim-to-real,仿真迁移,physics simulation,digital twin
+- vision-language-action,VLA model,robot foundation model
+- AI for physics,材料科学 AI,molecular dynamics
+- edge AI,实时系统,robot hardware
+- world model,物理推理,spatial understanding
 
 输出：
 - 有更新时，发送通知（标题 + 链接 + 匹配的关键词）
@@ -236,7 +239,7 @@
 └──────────────────────┬──────────────────────────┘
                        ↓ 有新内容时触发
 ┌─────────────────────────────────────────────────┐
-│  Layer 2: 广度搜索（每周）                    │
+│  Layer 2: 广度搜索（每周）                         │
 │  工具：ChatGPT Deep Research                     │
 │  输入：Prompt A                                   │
 │  输出：5-10 篇文章 + 3-5 个项目的结构化摘要         │

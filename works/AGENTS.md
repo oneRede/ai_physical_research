@@ -35,7 +35,12 @@ pipelineSource:    # 对应 translate/<batch>/works-ready/<file>；存量手工�
 
 | 文件 | 原文 | 来源 | 领域 |
 |------|------|------|------|
-| _待补充_ | - | - | - |
+| [nvidia-isaac-groot-reference-robot-translation.md](nvidia-isaac-groot-reference-robot-translation.md) | [NVIDIA 发布 Isaac GR00T 人形机器人参考设计](https://nvidianews.nvidia.com/news/nvidia-open-humanoid-robot-reference-design) | NVIDIA | 机器人硬件平台 |
+| [end-to-end-driving-survey-translation.md](end-to-end-driving-survey-translation.md) | [端到端自动驾驶综述](https://arxiv.org/html/2603.16050v1) | arXiv | 自动驾驶 |
+| [gemini-robotics-er-1-6-translation.md](gemini-robotics-er-1-6-translation.md) | [Gemini Robotics ER 1.6](https://deepmind.google/blog/gemini-robotics-er-1-6/) | Google DeepMind | 具身推理 |
+| [pndbotics-adam-waic-2026-translation.md](pndbotics-adam-waic-2026-translation.md) | [PNDbotics Adam 人形机器人](https://embodiedglobal.com/en/article/pndbotics-adam-humanoid-stair-climbing-waic-2026) | Embodied Global | 人形机器人 |
+| [robot-factored-world-models-translation.md](robot-factored-world-models-translation.md) | [机器人因子化世界模型](https://arxiv.org/abs/2607.22535) | arXiv | 世界模型 |
+| [embodied-gpt-5.1-world-model-translation.md](embodied-gpt-5.1-world-model-translation.md) | [具身 GPT-5.1：世界模型的证据？](https://arxiv.org/abs/2607.23899) | arXiv | 大语言模型具身控制 |
 
 ## 作品方向参考
 
