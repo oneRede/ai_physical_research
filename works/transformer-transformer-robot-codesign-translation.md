@@ -7,6 +7,9 @@ capturedAt: "2026-07-30T13:33:06.522Z"
 conversionMethod: "defuddle"
 kind: "generic/article"
 language: "en"
+pipelineRunId: "20260730_213232"
+pipelineSource: "translate/20260730_213232"
+translationMode: "fast"
 ---# Transformer Transformer：运动条件的机器人协同设计统一模型
 
 Huy Ha <sup>1,2</sup>, Karen Liu <sup>1</sup>, Shuran Song <sup>1,2</sup>

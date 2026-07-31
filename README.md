@@ -46,7 +46,7 @@ ai_application_research/
 
 ## 📚 收录内容
 
-### 翻译作品（7 篇）
+### 翻译作品（8 篇）
 
 | # | 标题 | 原文 | 翻译 |
 |---|------|------|------|
@@ -57,6 +57,7 @@ ai_application_research/
 | 5 | 通过机器人渲染实现机器人因子化世界模型 | [arXiv](https://arxiv.org/abs/2607.22535) | [works/robot-factored-world-models-translation.md](works/robot-factored-world-models-translation.md) |
 | 6 | 具身 GPT-5.1：世界模型的证据？ | [arXiv](https://arxiv.org/abs/2607.23899) | [works/embodied-gpt-5.1-world-model-translation.md](works/embodied-gpt-5.1-world-model-translation.md) |
 | 7 | TurboVLA：消费级 RTX 4090 上 32Hz 实时视觉-语言-动作模型 | [arXiv](https://arxiv.org/abs/2607.27205) | [works/turbovla-efficient-vision-language-action-rtx4090-translation.md](works/turbovla-efficient-vision-language-action-rtx4090-translation.md) |
+| 8 | Transformer Transformer：运动条件的机器人协同设计统一模型 | [arXiv](https://arxiv.org/abs/2607.25798) | [works/transformer-transformer-robot-codesign-translation.md](works/transformer-transformer-robot-codesign-translation.md) |
 
 完整索引见 [references/articles.md](references/articles.md)
 
