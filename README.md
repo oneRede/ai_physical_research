@@ -59,7 +59,7 @@ ai_application_research/
 | 7 | TurboVLA：消费级 RTX 4090 上 32Hz 实时视觉-语言-动作模型 | [arXiv](https://arxiv.org/abs/2607.27205) | [works/turbovla-efficient-vision-language-action-rtx4090-translation.md](works/turbovla-efficient-vision-language-action-rtx4090-translation.md) |
 | 8 | AXIS：一个可增长的社区驱动数据引擎，用于可扩展的机器人操作 | [arXiv](https://arxiv.org/abs/2607.21588) | [works/axis-growable-community-data-engine-translation.md](works/axis-growable-community-data-engine-translation.md) |
 | 9 | M100：驱动通用 AI 计算的编排式数据流架构 | [arXiv](https://arxiv.org/abs/2604.17862) | [works/m100-orchestrated-dataflow-translation.md](works/m100-orchestrated-dataflow-translation.md) |
-| 10 | Transformer Transformer：运动条件的机器人协同设计统一模型 | [arXiv](https://arxiv.org/abs/2607.25798) | [works/transformer-transformer-robot-codesign-translation.md](works/transformer-transformer-robot-codesign-translation.md) |
+| 10 | π₀：用于通用机器人控制的视觉-语言-动作流模型 | [arXiv](https://arxiv.org/abs/2410.24164) | [works/pi0-vision-language-action-flow-model-translation.md](works/pi0-vision-language-action-flow-model-translation.md) |
 
 完整索引见 [references/articles.md](references/articles.md)
 
